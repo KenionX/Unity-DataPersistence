@@ -14,7 +14,7 @@ public class PersistentManager : MonoBehaviour
     public int HighScore
     {
         get => _highScore;
-        private set
+        set
         {
             if (value < _highScore)
                 return;

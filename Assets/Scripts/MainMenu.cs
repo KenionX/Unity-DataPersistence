@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
     {
         if (nameField.text.Length < 2)
             return;
+
+        PersistentManager.Instance.playerName = nameField.text;
         SceneManager.LoadScene(1);
     }
 }
