@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
@@ -16,5 +17,6 @@ public class MainMenu : MonoBehaviour
     {
         if (nameField.text.Length < 2)
             return;
+        SceneManager.LoadScene(1);
     }
 }
